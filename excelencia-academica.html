@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excelencia Académica - Estudiantes Ganadores | IE JEC Emancipación Americana</title>
+  <meta name="description" content="Galería de estudiantes ganadores en concursos de ciencias, matemáticas, letras, arte y deportes de la IE JEC Emancipación Americana de Tinta, Cusco">
+  <meta name="keywords" content="estudiantes ganadores, concursos escolares, excelencia académica, Tinta Cusco, logros estudiantiles">
+  
+  <!-- Estilos compartidos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+          <img src="imagenes/INSIGNIA.png" 
+               alt="Logo IE JEC Emancipación Americana" 
+               title="Colegio Emancipación Americana Tinta"
+               width="70" height="70"
+               loading="eager">
+          <div class="logo-text">
+            <h1>IE JEC Emancipación Americana - Excelencia Académica</h1>
+            <span>Tinta - Cusco | Código Modular: 0499368</span>
+          </div>
+        </a>
+      </div>
+
+      <button class="mobile-menu-btn" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span class="menu-icon">☰</span>
+        <span class="sr-only">Menú</span>
+      </button>
+
+      <nav aria-label="Navegación principal">
+        <ul id="menu">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="index.html#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="index.html#personal" class="nav-link">Personal</a></li>
+          <li><a href="index.html#actividades" class="nav-link">Actividades</a></li>
+          <li><a href="index.html#programas" class="nav-link">Programas</a></li>
+          <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección de Galería -->
+  <section class="gallery-section">
+    <div class="container">
+      <h2 class="section-title">Galería de Estudiantes Ganadores</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+        Reconocimiento a nuestros estudiantes destacados en diferentes concursos educativos 
+        a nivel local, regional y nacional.
+      </p>
+      
+      <!-- Filtros -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="ciencias">Ciencias</button>
+        <button class="filter-btn" data-filter="matematicas">Matemáticas</button>
+        <button class="filter-btn" data-filter="letras">Letras</button>
+        <button class="filter-btn" data-filter="arte">Arte</button>
+        <button class="filter-btn" data-filter="deportes">Deportes</button>
+      </div>
+      
+      <!-- Galería de ganadores -->
+      <div class="gallery-grid" id="winners-gallery">
+        <!-- Ganador 1 -->
+        <div class="winner-card" data-category="ciencias">
+          <img src="imagenes/profesor.png" alt="Estudiante ganador en ciencias" class="winner-image">
+          <div class="winner-info">
+            <h3 class="winner-name">Juan Pérez Rodríguez</h3>
+            <p class="winner-achievement">Primer lugar - Olimpiada Nacional de Ciencias</p>
+            <p class="winner-details">Ganador de la Olimpiada Nacional de Ciencias 2023 con proyecto sobre energías renovables.</p>
+            <span class="winner-year">2023</span>
+          </div>
+        </div>
+        
+        <!-- Ganador 2 -->
+        <div class="winner-card" data-category="matematicas">
+          <img src="imagenes/profesora.png" alt="Estudiante ganador en matemáticas" class="winner-image">
+          <div class="winner-info">
+            <h3 class="winner-name">María López García</h3>
+            <p class="winner-achievement">Segundo lugar - Concurso Regional de Matemáticas</p>
+            <p class="winner-details">Destacada participación en el Concurso Regional de Matemáticas Cusco 2023.</p>
+            <span class="winner-year">2023</span>
+          </div>
+        </div>
+        
+        <!-- Ganador 3 -->
+        <div class="winner-card" data-category="letras">
+          <img src="imagenes/profesor.png" alt="Estudiante ganador en letras" class="winner-image">
+          <div class="winner-info">
+            <h3 class="winner-name">Carlos Mamani Quispe</h3>
+            <p class="winner-achievement">Primer lugar - Concurso de Oratoria</p>
+            <p class="winner-details">Ganador del Concurso de Oratoria Interescolar 2023 con discurso sobre identidad cultural.</p>
+            <span class="winner-year">2023</span>
+          </div>
+        </div>
+        
+        <!-- Ganador 4 -->
+        <div class="winner-card" data-category="arte">
+          <img src="imagenes/profesora.png" alt="Estudiante ganador en arte" class="winner-image">
+          <div class="winner-info">
+            <h3 class="winner-name">Ana Condori Huamán</h3>
+            <p class="winner-achievement">Mención honrosa - Festival de Arte Escolar</p>
+            <p class="winner-details">Reconocida por su obra pictórica en el Festival Regional de Arte Escolar 2023.</p>
+            <span class="winner-year">2023</span>
+          </div>
+        </div>
+        
+        <!-- Ganador 5 -->
+        <div class="winner-card" data-category="deportes">
+          <img src="imagenes/profesor.png" alt="Estudiante ganador en deportes" class="winner-image">
+          <div class="winner-info">
+            <h3 class="winner-name">Luis Quispe Ccallo</h3>
+            <p class="winner-achievement">Campeón - Torneo de Atletismo Interescolar</p>
+            <p class="winner-details">Medalla de oro en 100 metros planos en el Torneo de Atletismo 2023.</p>
+            <span class="winner-year">2023</span>
+          </div>
+        </div>
+        
+        <!-- Ganador 6 -->
+        <div class="winner-card" data-category="ciencias">
+          <img src="imagenes/profesora.png" alt="Estudiante ganador en ciencias" class="winner-image">
+          <div class="winner-info">
+            <h3 class="winner-name">Rosa Tinta Condori</h3>
+            <p class="winner-achievement">Tercer lugar - Feria de Ciencias</p>
+            <p class="winner-details">Destacada participación con proyecto de reciclaje en la Feria de Ciencias 2023.</p>
+            <span class="winner-year">2023</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Botón de regreso -->
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="index.html#nosotros" class="back-btn">
+          <i class="fas fa-arrow-left"></i> Volver a la página principal
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>IE JEC Emancipación Americana</h3>
+          <p>Formando líderes para el futuro con educación de calidad y valores en Tinta, Cusco.</p>
+          <p><i class="fas fa-id-card"></i> Código Modular: 0499368</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Enlaces rápidos</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li><a href="index.html#personal">Personal</a></li>
+            <li><a href="index.html#actividades">Actividades</a></li>
+            <li><a href="index.html#programas">Programas</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Síguenos</h3>
+          <div class="social-links">
+            <a href="https://www.facebook.com/emancipacionamericana" target="_blank" aria-label="Síguenos en Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Síguenos en Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Visita nuestro canal de YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2025 IE JEC Emancipación Americana de Tinta - Todos los derechos reservados</p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem;">Desarrollado para la comunidad educativa de Tinta</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
